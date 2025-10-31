@@ -17,11 +17,11 @@ mongodb+srv://User:User@cluster0.ucqgbv9.mongodb.net/
 
 Collections principales
 
-books → titres, auteurs, genres, années, exemplaires, bibliothèque
+books → _id, title, author, genre, publication_year, copies,library_name
 
-libraries → nom, ville, année, sections (objets imbriqués), budget
+libraries → id, name, city, established_year, sections, budget_euros, city_ref
 
-cities → nom, région, référence (city_ref)
+cities → _id, city_name, region, city_id
 
 💾 Données
 
@@ -44,12 +44,6 @@ db.libraries.aggregate([
 Répartition des livres par genre – Diagramme à barres
 
 Budgets des bibliothèques – Diagramme en anneau
-
-🚀 Installation
-git clone https://github.com/<ton-nom>/LibDB.git
-cd LibDB
-mongoimport --uri "mongodb+srv://User:User@cluster0.ucqgbv9.mongodb.net/libdb" --collection books --file books.json --jsonArray
-mongoimport --uri "mongodb+srv://User:User@cluster0.ucqgbv9.mongodb.net/libdb" --collection libraries --file libraries.json --jsonArray
 
 🏁 Objectif
 
