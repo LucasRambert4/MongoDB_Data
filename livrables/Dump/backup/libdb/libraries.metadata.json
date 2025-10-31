@@ -1,1 +1,0 @@
-{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"city":{"$numberInt":"1"}},"name":"city_1"}],"uuid":"f63e70320bd1490391e79dd8dea01449","collectionName":"libraries","type":"collection"}
